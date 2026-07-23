@@ -1,0 +1,31 @@
+{
+  "nav": {
+    "flights": "Flüge",
+    "tours": "Touren",
+    "locations": "Orte",
+    "safety": "Sicherheit",
+    "pilots": "Piloten",
+    "gallery": "Galerie",
+    "reviews": "Bewertungen",
+    "giftCards": "Gutscheine",
+    "faq": "FAQ",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "book": "Jetzt buchen"
+  },
+  "cta": {
+    "bookWhatsApp": "Per WhatsApp buchen",
+    "viewFlights": "Flüge ansehen",
+    "learnSafety": "Unsere Sicherheitsstandards"
+  },
+  "footer": {
+    "tagline": "Tandem-Paragliding ab Jounieh — Start bei Harissa, Mittelmeerblicke.",
+    "explore": "Entdecken",
+    "trust": "Vertrauen",
+    "contact": "Kontakt",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "localeStub": {
+    "notice": "Vollständige deutsche Inhalte folgen bald. Englisch ist vorerst die Hauptsprache."
+  }
+}

@@ -1,0 +1,6 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <rect width="800" height="1000" fill="#2a9aad"/>
+  <circle cx="400" cy="320" r="120" fill="#d4c4a8"/>
+  <rect x="250" y="460" width="300" height="380" rx="40" fill="#0b3d4a"/>
+  <text x="400" y="920" text-anchor="middle" fill="#f3f7f8" font-size="28" font-family="Arial">Pilot placeholder</text>
+</svg>

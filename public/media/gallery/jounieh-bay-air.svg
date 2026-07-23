@@ -1,0 +1,8 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#1a6b7a"/>
+  <rect y="480" width="1200" height="320" fill="#0b3d4a"/>
+  <circle cx="200" cy="140" r="48" fill="#d4c4a8" opacity="0.7"/>
+  <path d="M700 260 Q820 180 940 260" stroke="#f3f7f8" stroke-width="5" fill="none"/>
+  <ellipse cx="820" cy="260" rx="70" ry="14" fill="#f3f7f8"/>
+  <text x="48" y="720" fill="#f3f7f8" font-size="28" font-family="Arial">Jounieh Bay air — TODO real photo</text>
+</svg>

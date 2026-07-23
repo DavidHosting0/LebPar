@@ -1,0 +1,31 @@
+{
+  "nav": {
+    "flights": "Vols",
+    "tours": "Circuits",
+    "locations": "Lieux",
+    "safety": "Sécurité",
+    "pilots": "Pilotes",
+    "gallery": "Galerie",
+    "reviews": "Avis",
+    "giftCards": "Cartes cadeaux",
+    "faq": "FAQ",
+    "about": "À propos",
+    "contact": "Contact",
+    "book": "Réserver"
+  },
+  "cta": {
+    "bookWhatsApp": "Réserver sur WhatsApp",
+    "viewFlights": "Voir les vols",
+    "learnSafety": "Nos normes de sécurité"
+  },
+  "footer": {
+    "tagline": "Parapente en tandem depuis Jounieh — décollage Harissa, vues Méditerranée.",
+    "explore": "Explorer",
+    "trust": "Confiance",
+    "contact": "Contact",
+    "rights": "Tous droits réservés."
+  },
+  "localeStub": {
+    "notice": "Le contenu complet en français arrive bientôt. L’anglais reste la langue principale pour l’instant."
+  }
+}

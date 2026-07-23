@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+:root {
+  --sea-deep: #0b3d4a;
+  --sea: #1a6b7a;
+  --sea-bright: #2a9aad;
+  --sand: #d4c4a8;
+  --stone: #5c5346;
+  --foam: #f3f7f8;
+  --ink: #122026;
+  --sunset: #c45c26;
+  --background: var(--foam);
+  --foreground: var(--ink);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-sea-deep: var(--sea-deep);
+  --color-sea: var(--sea);
+  --color-sea-bright: var(--sea-bright);
+  --color-sand: var(--sand);
+  --color-stone: var(--stone);
+  --color-foam: var(--foam);
+  --color-ink: var(--ink);
+  --color-sunset: var(--sunset);
+  --font-sans: var(--font-figtree);
+  --font-display: var(--font-syne);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-figtree), system-ui, sans-serif;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--sea-bright) 35%, white);
+}
+
+.font-display {
+  font-family: var(--font-syne), var(--font-figtree), sans-serif;
+}
+
+/* Atmospheric page wash — Mediterranean light, not flat white */
+.page-atmosphere {
+  background:
+    radial-gradient(1200px 600px at 10% -10%, color-mix(in oklab, var(--sea-bright) 18%, transparent), transparent 60%),
+    radial-gradient(900px 500px at 100% 0%, color-mix(in oklab, var(--sand) 35%, transparent), transparent 55%),
+    linear-gradient(180deg, #e8f2f4 0%, var(--foam) 40%, #eef4f2 100%);
+}
+
+.hero-scrim {
+  background: linear-gradient(
+    105deg,
+    color-mix(in oklab, var(--sea-deep) 88%, black) 0%,
+    color-mix(in oklab, var(--sea-deep) 55%, transparent) 55%,
+    color-mix(in oklab, var(--sea) 25%, transparent) 100%
+  );
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes soft-zoom {
+  from {
+    transform: scale(1.06);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.9s ease-out both;
+}
+
+.animate-fade-up-delay {
+  animation: fade-up 0.9s ease-out 0.15s both;
+}
+
+.animate-fade-up-delay-2 {
+  animation: fade-up 0.9s ease-out 0.3s both;
+}
+
+.animate-hero-zoom {
+  animation: soft-zoom 8s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up,
+  .animate-fade-up-delay,
+  .animate-fade-up-delay-2,
+  .animate-hero-zoom {
+    animation: none;
+  }
+}

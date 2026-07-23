@@ -1,0 +1,31 @@
+{
+  "nav": {
+    "flights": "Flights",
+    "tours": "Tours",
+    "locations": "Locations",
+    "safety": "Safety",
+    "pilots": "Pilots",
+    "gallery": "Gallery",
+    "reviews": "Reviews",
+    "giftCards": "Gift cards",
+    "faq": "FAQ",
+    "about": "About",
+    "contact": "Contact",
+    "book": "Book now"
+  },
+  "cta": {
+    "bookWhatsApp": "Book on WhatsApp",
+    "viewFlights": "View flights",
+    "learnSafety": "Our safety standards"
+  },
+  "footer": {
+    "tagline": "Tandem paragliding from Jounieh — Harissa takeoff, Mediterranean views.",
+    "explore": "Explore",
+    "trust": "Trust",
+    "contact": "Contact",
+    "rights": "All rights reserved."
+  },
+  "localeStub": {
+    "notice": "English is our primary language. Full Arabic, French, and German content is coming soon."
+  }
+}
