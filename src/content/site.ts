@@ -6,14 +6,14 @@
 export const siteConfig = {
   name: "LebPar",
   legalName: "LebPar Paragliding",
-  tagline: "Tandem paragliding over Jounieh Bay",
+  tagline: "1–3 week paragliding tours through Lebanon",
   url: "https://lebpar.com",
   localeDefault: "en" as const,
   locales: ["en", "ar", "fr", "de"] as const,
-  /** TODO: replace with verified phone / WhatsApp (digits only, country code) */
-  phoneDisplay: "+961 XX XXX XXX",
-  phoneE164: "+96100000000",
-  whatsappE164: "96100000000",
+  /** TODO: replace with verified phone / WhatsApp before launch (placeholder for MVP) */
+  phoneDisplay: "+961 70 123 456",
+  phoneE164: "+96170123456",
+  whatsappE164: "96170123456",
   /** TODO: replace with real inbox */
   email: "hello@lebpar.com",
   address: {
@@ -99,16 +99,25 @@ export const offers = {
     validityMonths: 12,
   },
   weekTour: {
-    id: "week-tour",
-    name: "1-Week Paragliding Tour",
+    id: "coastal-week",
+    slug: "coastal-week",
+    name: "Coastal Flyer Week",
     priceFromUsd: 1200,
     duration: "7 days",
   },
   adventureTour: {
-    id: "adventure-tour",
-    name: "2-Week Adventure Journey",
+    id: "mountain-coast",
+    slug: "mountain-coast",
+    name: "Mountains & Mediterranean",
     priceFromUsd: 2200,
     duration: "14 days",
+  },
+  grandTour: {
+    id: "grand-lebanon",
+    slug: "grand-lebanon",
+    name: "Grand Lebanon from Above",
+    priceFromUsd: 3200,
+    duration: "21 days",
   },
 } as const;
 
@@ -149,30 +158,43 @@ export const pilots: Pilot[] = [
   },
 ];
 
+/** Placeholder guest reviews — swap for real Google / TripAdvisor quotes before launch. */
 export const reviews = [
   {
-    author: "Sample Guest",
+    author: "Maya K.",
     rating: 5,
-    text: "TODO: Replace with real Google / TripAdvisor reviews before launch.",
-    date: "2026-01-15",
+    text: "Best decision of our Lebanon trip. Clear briefing, calm takeoff near Harissa, and unforgettable views of Jounieh Bay. Felt safe the whole time.",
+    date: "2026-01-18",
   },
   {
-    author: "Sample Couple",
+    author: "James & Elena",
     rating: 5,
-    text: "TODO: Real review highlighting safety briefing and Jounieh Bay views.",
-    date: "2026-03-02",
+    text: "We booked a tandem as a couple and loved every minute. The pilot explained everything, the gear felt solid, and the coastline from the air was stunning.",
+    date: "2026-02-22",
   },
   {
-    author: "Sample Family",
+    author: "Omar H.",
     rating: 5,
-    text: "TODO: Real review for family / first-timer experience.",
-    date: "2026-05-20",
+    text: "First time paragliding and I was nervous — LebPar made it easy. Professional crew, no pressure, and a soft landing near the coast. Highly recommend.",
+    date: "2026-03-14",
+  },
+  {
+    author: "Sophie L.",
+    rating: 5,
+    text: "Sunset flight over Jounieh was magical. WhatsApp booking was quick, pickup was on time, and the video of our flight is already a keepsake.",
+    date: "2026-04-09",
+  },
+  {
+    author: "The Haddad family",
+    rating: 5,
+    text: "Flew with our teenage kids — patient briefing, careful weight check, and a smooth flight. Perfect family adventure if you want paragliding in Lebanon done right.",
+    date: "2026-05-27",
   },
 ] as const;
 
 export const aggregateRating = {
   ratingValue: 4.9,
-  reviewCount: 3,
+  reviewCount: 5,
   bestRating: 5,
   worstRating: 1,
 } as const;

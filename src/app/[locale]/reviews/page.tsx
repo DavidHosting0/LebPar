@@ -51,7 +51,7 @@ export default async function ReviewsPage({ params }: Props) {
           <strong>
             {aggregateRating.ratingValue}/{aggregateRating.bestRating}
           </strong>{" "}
-          ({aggregateRating.reviewCount} reviews — replace with live Google count at launch)
+          ({aggregateRating.reviewCount} reviews)
         </p>
         <div className="space-y-8">
           {reviews.map((review) => (

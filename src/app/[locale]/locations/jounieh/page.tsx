@@ -4,7 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { PageShell } from "@/components/ui/PageShell";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { pages } from "@/content/pages";
-import { breadcrumbJsonLd } from "@/lib/schema";
+import { breadcrumbJsonLd, touristAttractionsJsonLd } from "@/lib/schema";
 import { buildPageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -27,13 +27,16 @@ export default async function JouniehPage({ params }: Props) {
   return (
     <>
       <SchemaScript
-        data={breadcrumbJsonLd(
-          [
-            { name: "Home", path: "/" },
-            { name: "Jounieh", path: "/locations/jounieh" },
-          ],
-          locale,
-        )}
+        data={[
+          touristAttractionsJsonLd()[0],
+          breadcrumbJsonLd(
+            [
+              { name: "Home", path: "/" },
+              { name: "Jounieh", path: "/locations/jounieh" },
+            ],
+            locale,
+          ),
+        ]}
       />
       <PageShell
         crumbs={[
@@ -77,7 +80,11 @@ export default async function JouniehPage({ params }: Props) {
             </Link>{" "}
             ·{" "}
             <Link href="/flights" className="text-sea underline">
-              Flights & prices
+              paragliding flights &amp; prices in Lebanon
+            </Link>{" "}
+            ·{" "}
+            <Link href="/booking" className="text-sea underline">
+              book tandem in Jounieh
             </Link>
           </p>
         </div>

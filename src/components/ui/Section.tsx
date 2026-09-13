@@ -20,23 +20,26 @@ export function CtaBand() {
     <section className="border-y border-sea-deep/10 bg-sea-deep text-foam">
       <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 px-4 py-12 md:flex-row md:items-center md:px-6">
         <div>
-          <h2 className="font-display text-2xl font-bold md:text-3xl">Ready to fly Jounieh?</h2>
+          <h2 className="font-display text-2xl font-bold md:text-3xl">
+            Ready for a Lebanon paragliding tour?
+          </h2>
           <p className="mt-2 max-w-xl text-foam/80">
-            Book your LebPar tandem by WhatsApp — we confirm weather windows and meet you in town.
+            Tell us whether you want 7, 14, or 21 days — we confirm weather windows, sites, and
+            lodging options by WhatsApp.
           </p>
         </div>
         <div className="flex flex-wrap gap-3">
           <Link
-            href="/booking"
+            href="/tours"
             className="rounded-full bg-sunset px-6 py-3 text-sm font-semibold transition hover:brightness-110"
           >
-            Book online
+            View tours
           </Link>
           <Link
-            href="/safety"
+            href="/booking"
             className="rounded-full border border-foam/30 px-6 py-3 text-sm font-semibold transition hover:bg-foam/10"
           >
-            Safety standards
+            Request a quote
           </Link>
         </div>
       </div>

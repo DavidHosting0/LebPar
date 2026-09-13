@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "LebPar tandem paragliding over Jounieh Bay, Lebanon";
+export const alt = "LebPar paragliding tours through Lebanon — Jounieh Bay and mountain sites";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -21,13 +21,13 @@ export default function OpenGraphImage() {
         }}
       >
         <div style={{ fontSize: 28, letterSpacing: 6, textTransform: "uppercase", color: "#d4c4a8" }}>
-          LebPar · Jounieh
+          LebPar · Lebanon
         </div>
-        <div style={{ fontSize: 64, fontWeight: 700, marginTop: 16, maxWidth: 900 }}>
-          Paragliding over Jounieh Bay
+        <div style={{ fontSize: 64, fontWeight: 700, marginTop: 16, maxWidth: 980 }}>
+          Paragliding tours through Lebanon
         </div>
         <div style={{ fontSize: 28, marginTop: 20, color: "#e8f2f4" }}>
-          Tandem flights · Harissa takeoff · WhatsApp booking
+          1–3 weeks · Coast & mountains · WhatsApp booking
         </div>
       </div>
     ),

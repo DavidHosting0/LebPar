@@ -41,22 +41,30 @@ export function BookingForm() {
       </div>
       <div>
         <label htmlFor="flight" className="block text-sm font-medium text-ink">
-          Flight type *
+          Experience *
         </label>
         <select
           id="flight"
           name="flight"
           required
           className="mt-1 w-full rounded-lg border border-sea-deep/15 bg-foam px-3 py-2 outline-none focus:border-sea"
-          defaultValue={offers.tandem.name}
+          defaultValue={offers.weekTour.name}
         >
+          <option value={offers.weekTour.name}>
+            {offers.weekTour.name} ({offers.weekTour.duration})
+          </option>
+          <option value={offers.adventureTour.name}>
+            {offers.adventureTour.name} ({offers.adventureTour.duration})
+          </option>
+          <option value={offers.grandTour.name}>
+            {offers.grandTour.name} ({offers.grandTour.duration})
+          </option>
           <option value={offers.tandem.name}>{offers.tandem.name}</option>
           <option value={offers.premium.name}>{offers.premium.name}</option>
           <option value={offers.sunset.name}>{offers.sunset.name}</option>
           <option value="Gift voucher">Gift voucher</option>
           <option value="Group / corporate">Group / corporate</option>
-          <option value="1-week tour">1-week tour</option>
-          <option value="2-week adventure">2-week adventure</option>
+          <option value="Custom tour">Custom tour</option>
         </select>
       </div>
       <div className="grid gap-4 sm:grid-cols-2">

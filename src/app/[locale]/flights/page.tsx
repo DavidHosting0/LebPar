@@ -77,11 +77,23 @@ export default async function FlightsPage({ params }: Props) {
               Photo/video upgrades from ${offers.photoVideo.priceUsd}. Groups, corporate events, and
               private tours — message us on WhatsApp for a quote. See also{" "}
               <Link href="/gift-cards" className="text-sea underline">
-                gift cards
-              </Link>{" "}
-              and{" "}
+                gift vouchers for paragliding in Lebanon
+              </Link>
+              ,{" "}
               <Link href="/tours" className="text-sea underline">
                 multi-day tours
+              </Link>
+              , and{" "}
+              <Link href="/booking" className="text-sea underline">
+                book tandem in Jounieh
+              </Link>
+              . Learn more about our{" "}
+              <Link href="/locations/harissa" className="text-sea underline">
+                Harissa takeoff
+              </Link>{" "}
+              and{" "}
+              <Link href="/locations/jounieh" className="text-sea underline">
+                paragliding in Jounieh
               </Link>
               .
             </p>

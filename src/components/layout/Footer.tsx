@@ -17,13 +17,13 @@ export async function Footer() {
           <p className="text-sm font-semibold uppercase tracking-wider text-sand">{t("explore")}</p>
           <ul className="mt-3 space-y-2 text-sm text-foam/85">
             <li>
-              <Link href="/flights" className="hover:text-sand">
-                Flights
+              <Link href="/tours" className="hover:text-sand">
+                Tours
               </Link>
             </li>
             <li>
-              <Link href="/tours" className="hover:text-sand">
-                Tours
+              <Link href="/flights" className="hover:text-sand">
+                Flights
               </Link>
             </li>
             <li>
@@ -37,13 +37,13 @@ export async function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/gift-cards" className="hover:text-sand">
-                Gift cards
+              <Link href="/gallery" className="hover:text-sand">
+                Gallery
               </Link>
             </li>
             <li>
-              <Link href="/gallery" className="hover:text-sand">
-                Gallery
+              <Link href="/gift-cards" className="hover:text-sand">
+                Gift cards
               </Link>
             </li>
           </ul>

@@ -69,6 +69,7 @@ export function buildPageMetadata({
       card: "summary_large_image",
       title: fullTitle,
       description: description.slice(0, 160),
+      images: [ogImage ?? absoluteUrl("/opengraph-image")],
     },
     robots: {
       index: true,

@@ -8,6 +8,9 @@ const paths = [
   "/flights/premium",
   "/flights/sunset",
   "/tours",
+  "/tours/coastal-week",
+  "/tours/mountain-coast",
+  "/tours/grand-lebanon",
   "/gift-cards",
   "/booking",
   "/safety",
@@ -30,8 +33,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       entries.push({
         url: `${siteConfig.url}/${locale}${path}`,
         lastModified,
-        changeFrequency: path === "" || path.startsWith("/flights") ? "weekly" : "monthly",
-        priority: path === "" ? 1 : path.startsWith("/flights") || path === "/booking" ? 0.9 : 0.7,
+        changeFrequency:
+          path === "" || path.startsWith("/tours") || path.startsWith("/flights")
+            ? "weekly"
+            : "monthly",
+        priority:
+          path === ""
+            ? 1
+            : path.startsWith("/tours") || path === "/booking"
+              ? 0.95
+              : path.startsWith("/flights")
+                ? 0.85
+                : 0.7,
         alternates: {
           languages: Object.fromEntries(
             siteConfig.locales.map((l) => [l, `${siteConfig.url}/${l}${path}`]),

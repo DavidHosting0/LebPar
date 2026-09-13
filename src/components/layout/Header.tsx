@@ -7,12 +7,12 @@ import { siteConfig } from "@/content/site";
 import { WhatsAppLink } from "@/components/layout/StickyWhatsApp";
 
 const navLinks = [
-  { href: "/flights", key: "flights" as const },
   { href: "/tours", key: "tours" as const },
+  { href: "/flights", key: "flights" as const },
   { href: "/locations/jounieh", key: "locations" as const },
+  { href: "/gallery", key: "gallery" as const },
   { href: "/safety", key: "safety" as const },
   { href: "/pilots", key: "pilots" as const },
-  { href: "/gallery", key: "gallery" as const },
   { href: "/gift-cards", key: "giftCards" as const },
   { href: "/faq", key: "faq" as const },
 ];

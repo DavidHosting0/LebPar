@@ -4,7 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { PageShell } from "@/components/ui/PageShell";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { pages } from "@/content/pages";
-import { breadcrumbJsonLd } from "@/lib/schema";
+import { breadcrumbJsonLd, touristAttractionsJsonLd } from "@/lib/schema";
 import { buildPageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -27,13 +27,16 @@ export default async function HarissaPage({ params }: Props) {
   return (
     <>
       <SchemaScript
-        data={breadcrumbJsonLd(
-          [
-            { name: "Home", path: "/" },
-            { name: "Harissa", path: "/locations/harissa" },
-          ],
-          locale,
-        )}
+        data={[
+          touristAttractionsJsonLd()[1],
+          breadcrumbJsonLd(
+            [
+              { name: "Home", path: "/" },
+              { name: "Harissa", path: "/locations/harissa" },
+            ],
+            locale,
+          ),
+        ]}
       />
       <PageShell
         crumbs={[
@@ -68,11 +71,15 @@ export default async function HarissaPage({ params }: Props) {
               You do not self-drive to takeoff for a standard LebPar package — we transfer from our
               Jounieh meeting point. See the{" "}
               <Link href="/locations/jounieh" className="text-sea underline">
-                Jounieh guide
-              </Link>{" "}
-              and{" "}
+                paragliding in Jounieh guide
+              </Link>
+              , compare{" "}
+              <Link href="/flights" className="text-sea underline">
+                paragliding flights in Lebanon
+              </Link>
+              , or{" "}
               <Link href="/booking" className="text-sea underline">
-                book a flight
+                book tandem in Jounieh
               </Link>
               .
             </p>

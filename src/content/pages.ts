@@ -8,38 +8,43 @@ export type PageSeo = {
 
 export const pages = {
   home: {
-    title: "LebPar | Paragliding Lebanon Jounieh",
+    title: "Paragliding Tours Lebanon | LebPar",
     description:
-      "Book tandem paragliding in Jounieh with LebPar. Harissa takeoff, Bay views, certified pilots, sunset flights & gift vouchers.",
-    h1: "Paragliding over Jounieh Bay with LebPar",
+      "1–3 week paragliding tours through Lebanon with LebPar — Jounieh Bay, Faraya, Ehden, Cedars & Miziara. Certified pilots & WhatsApp booking.",
+    h1: "Paragliding tours through Lebanon",
     intro:
-      "LebPar is your Jounieh-based tandem paragliding operator for first-timers, couples, families, cruise guests, and adventure travelers. We launch near Harissa and fly the Mediterranean coastline — with clear safety briefings, modern equipment, and WhatsApp booking that takes minutes.",
-    whyHeading: "Why fly with LebPar",
+      "LebPar designs 1–3 week journeys that put you in the air above Lebanon’s signature landscapes — from Jounieh’s turquoise bay to Faraya’s highlands, Ehden’s ridges, the Cedars, and Miziara’s green villages. Single tandem flights are available too; multi-day tours are how we show the country.",
+    whyLebanonHeading: "Why a multi-day paragliding tour in Lebanon",
+    whyLebanon:
+      "One flight is a memory. A week or more means weather buffers, mountain and coast variety, and time to fly the same sky in different light. LebPar keeps every session legal tandem-only, with transparent USD pricing and WhatsApp coordination.",
+    whyHeading: "Why tour with LebPar",
     why: [
       {
-        title: "Local launch expertise",
-        body: "We know Ghosta / Harissa winds, abort criteria, and the classic Jounieh Bay line by heart.",
+        title: "Coast to highlands",
+        body: "We connect Jounieh Bay flights with Faraya, Ehden, Cedars, and Miziara — one operator, one itinerary language.",
       },
       {
         title: "Legal tandem only",
-        body: "Acrobatic paragliding is banned in Lebanon. We fly responsible tandem sightseeing flights only.",
+        body: "Acrobatic paragliding is banned in Lebanon. We fly responsible sightseeing flights only.",
       },
       {
-        title: "Clear inclusions",
-        body: "Transport to takeoff, briefing, gear, and flight video options — priced transparently in USD.",
+        title: "Built around weather",
+        body: "Multi-day tours include buffer days so wind windows — not a single afternoon — decide your sky time.",
       },
     ],
-    flightsHeading: "Flights for every itinerary",
+    toursHeading: "1–3 week tours",
+    destinationsHeading: "Where you’ll fly",
+    flightsHeading: "Or book a single flight",
     trustHeading: "Safety, pilots, and real reviews",
   } satisfies PageSeo & Record<string, unknown>,
 
   flights: {
     title: "Paragliding Flights & Prices | LebPar",
     description:
-      "Compare LebPar tandem, premium, and sunset paragliding flights in Jounieh. Clear USD prices, inclusions, and WhatsApp booking.",
+      "Compare paragliding in Lebanon prices — LebPar tandem, premium, and sunset flights in Jounieh. Clear USD rates & WhatsApp booking.",
     h1: "Paragliding flights and prices in Lebanon",
     intro:
-      "Choose a classic 15-minute tandem, a longer premium coastal flight, or a golden-hour sunset slot. All LebPar flights include a certified pilot, equipment, and transfer to the Harissa-area takeoff.",
+      "Compare paragliding in Lebanon options with LebPar: a classic 15-minute tandem, a longer premium coastal flight, or a golden-hour sunset slot. Every flight includes a certified pilot, equipment, and transfer to the Harissa-area takeoff.",
   },
 
   tandem: {
@@ -70,12 +75,12 @@ export const pages = {
   },
 
   tours: {
-    title: "Paragliding Tours Lebanon | LebPar",
+    title: "1–3 Week Paragliding Tours Lebanon | LebPar",
     description:
-      "1-week paragliding tours and 2-week adventure journeys with LebPar — flights, sights, and hotels around Lebanon.",
-    h1: "Paragliding tours and adventure journeys",
+      "Book 7, 14, or 21-day paragliding tours through Lebanon — Jounieh, Faraya, Ehden, Cedars & Miziara with LebPar.",
+    h1: "1–3 week paragliding tours through Lebanon",
     intro:
-      "Go beyond a single flight. LebPar designs multi-day experiences combining tandem flights with coastal towns, mountain viewpoints, and curated stays — for groups, influencers, and slow travelers.",
+      "Choose a coastal week in Jounieh, a two-week mountains-and-Mediterranean journey, or a three-week grand tour across all our signature sites. Each package pairs tandem flights with curated stays and weather-smart planning.",
   },
 
   giftCards: {
@@ -90,10 +95,10 @@ export const pages = {
   booking: {
     title: "Book Paragliding Lebanon | LebPar",
     description:
-      "Book your LebPar tandem flight by WhatsApp. Pick flight type, date, and passenger details in minutes.",
-    h1: "Book your LebPar paragliding flight",
+      "Book paragliding in Lebanon by WhatsApp with LebPar. Pick flight type, date, and passenger details in minutes.",
+    h1: "Book paragliding in Lebanon with LebPar",
     intro:
-      "Tell us who is flying, which experience you want, and your preferred date. We confirm weather windows and meet you in Jounieh.",
+      "Ready to book paragliding in Lebanon? Tell us who is flying, which experience you want, and your preferred date. We confirm weather windows and meet you in Jounieh.",
   },
 
   safety: {
@@ -120,7 +125,7 @@ export const pages = {
       "Guest reviews of LebPar tandem paragliding in Jounieh — first-timers, couples, and families.",
     h1: "What guests say about LebPar",
     intro:
-      "Real passenger feedback helps you decide. We publish ratings transparently and invite you to leave a review after your flight.",
+      "Passenger feedback helps you decide. We share ratings openly and invite you to leave a review after your flight over Jounieh Bay.",
   },
 
   faq: {
@@ -151,12 +156,12 @@ export const pages = {
   },
 
   gallery: {
-    title: "Paragliding Gallery Jounieh | LebPar",
+    title: "Paragliding Gallery Lebanon | LebPar",
     description:
-      "Photos from LebPar tandem flights over Jounieh Bay and Harissa — takeoff, flight, and landing moments.",
-    h1: "Flight gallery — Jounieh from the air",
+      "Real photos from LebPar flights and tour destinations — Jounieh Bay, Faraya, Ehden, Cedars, and Miziara.",
+    h1: "Lebanon from the air — flight gallery",
     intro:
-      "A visual preview of the coastline, shrine, and bay you’ll see on a LebPar tandem. Replace placeholders with dated flight photos before launch.",
+      "Coast, highlands, snow ridges, and green villages — a look at the landscapes you’ll fly on a LebPar tour or tandem.",
   },
 
   jounieh: {
@@ -187,7 +192,12 @@ export const homeFaqs: FaqItem[] = [
   {
     question: "How much does paragliding in Jounieh cost?",
     answer:
-      "LebPar’s standard 15-minute tandem starts at $120 USD per person including transport and video. Premium and sunset flights are priced separately on our flights page.",
+      "LebPar’s standard 15-minute tandem starts at $120 USD per person including transport and video. Multi-day tours start from $1,200 for 7 days — see our tours page for 14- and 21-day packages.",
+  },
+  {
+    question: "What’s included in a 1–3 week tour?",
+    answer:
+      "Flight sessions with certified pilots, takeoff transfers, weather-window planning, and itinerary structure across coast and mountain sites. Hotels can be packaged on request — WhatsApp us for a quote.",
   },
   {
     question: "Is paragliding safe with LebPar?",
